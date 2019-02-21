@@ -1,0 +1,24 @@
+.content {
+    display: flex !important;
+    flex-wrap: wrap;
+    background-color: #151515;
+    width: 20%;
+
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all .3s;
+}
+
+.menu_side_right .content {
+    transform: translateX(100%);
+}
+
+.menu_size_half .content_opened,
+.menu_size_full .content_opened {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.content_opened .footer {
+    opacity: 1;
+}
