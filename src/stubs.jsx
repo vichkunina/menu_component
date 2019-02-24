@@ -1,10 +1,10 @@
 import React from 'react'
 
-export const component1 = (
+const component1 = (
     <div>vulica Kastryčnickaja 16, Minsk</div>
 )
 
-export const component2 = (
+const component2 = (
     <div>
         <p>The Rolling Scopes is a front-end conference,
             located in Minsk, Belarus.</p>
@@ -12,7 +12,7 @@ export const component2 = (
     </div>
 )
 
-export const component3 = (
+const component3 = (
     <div>
         <img alt="" width="150" height="150 "/>
         <p>
@@ -21,7 +21,7 @@ export const component3 = (
     </div>
 )
 
-export const component4 = (
+const component4 = (
     <div>
         <p>The Rolling Scopes Conference August 9-11, 2019
             Minsk, Belarus</p>
@@ -30,7 +30,7 @@ export const component4 = (
     </div>
 )
 
-export const component5 = (
+const component5 = (
     <div>
         <href>1111</href>
         <href>2222</href>
@@ -40,8 +40,78 @@ export const component5 = (
 )
 
 
-export const footerComponent = (
+const footerComponent = (
     <div>
        Follow us<br />on social media,<br />our hashtag #rollingscopes
     </div>
 )
+export const hrefs = [
+    {
+        href: 'home',
+        title: 'home',
+    },
+    {
+        href: 'SCHEDULE',
+        title: 'SCHEDULE',
+    },
+    {
+        href: 'SPEAKERS',
+        title: 'SPEAKERS',
+    },
+    {
+        href: 'SPEAKERS',
+        title: 'SPEAKERS',
+    },
+    {
+        href: 'SPEAKERS',
+        title: 'SPEAKERS',
+    },
+    {
+        href: 'SPEAKERS',
+        title: 'SPEAKERS',
+    }
+]
+
+export const sections = [
+    {
+        title: {
+            name: 'ABOUT',
+            href: 'asdasdasd'
+        },
+        content: component1
+    },
+    {
+        title: {
+            name: 'VENUE',
+        },
+        content: component2
+    },
+    {
+        title: {
+            name: 'TICKETS',
+            href: 'asdasdasd'
+        },
+        content: component3
+    },
+    {
+        title: {
+            name: 'PREVIOUS YEARS',
+            href: 'asdasdasd'
+        },
+        content: component4
+    },
+    {
+        title: {
+            name: 'ОК16 CULTURAL HUB',
+            href: 'asdasdasd'
+        },
+        content: component5
+    },
+]
+
+export const footer = {
+  content: footerComponent,
+}
+
+export const size = 'full'
+// export const size = 'half'
