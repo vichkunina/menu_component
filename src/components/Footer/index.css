@@ -9,3 +9,10 @@
     transition: 10s;
     opacity: 1;
 }
+
+@media(max-width: 767px) {
+    .footer {
+        position: relative;
+        width: 100%;
+    }
+}

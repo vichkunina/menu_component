@@ -40,13 +40,13 @@
     width: 100%;
 }
 
-/* @media(max-width: 767px) {
+@media(max-width: 767px) {
     .menu_size_full .navigation {
         width: 100%;
     }
 
     .navigation__wrapper {
-        display: flex;
+        margin: 0;
     }
 
-} */
+}

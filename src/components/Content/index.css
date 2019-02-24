@@ -22,3 +22,19 @@
 .content_opened .footer {
     opacity: 1;
 }
+
+.menu_size_full .content {
+    width: 100%;
+}
+
+.menu_size_half .content {
+    min-width: 230px;
+}
+
+@media(max-width: 480px) {
+   .content,
+   .menu_size_full .content,
+   .menu_size_half .content {
+       width: 85%;
+   } 
+}

@@ -11,7 +11,7 @@
 .section {
     display: flex;
     flex-direction: column;
-    max-width: 33%;
+    max-width: calc(100% / 3);
     box-sizing: border-box;
     text-align: left;
     padding: 0 20px 20px;
@@ -27,4 +27,17 @@
     width: 75%;
     flex-wrap: wrap;
     margin: auto;
+}
+
+@media(max-width: 767px) {
+
+    .section {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .sections {
+        width: 100%;
+    }
+
 }
