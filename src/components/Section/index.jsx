@@ -21,6 +21,15 @@ export default class Section extends Component {
         return color;
     };
 
+    handeMouseOver = (index) => {
+        const color = this.getRandomColor();
+        this.setState({ [`hovered_${index}`]: color });
+    }
+
+    handeMouseOut = (index) => {
+        this.setState({ [`hovered_${index}`]: false });
+    }
+
     render() {
         const { sections } = this.props;
         return (
@@ -31,13 +40,8 @@ export default class Section extends Component {
                         style={{
                             backgroundColor: this.state[`hovered_${index}`]
                         }}
-                        onMouseOver={() => {
-                            const color = this.getRandomColor();
-                            this.setState({ [`hovered_${index}`]: color });
-                        }}
-                        onMouseOut={() => {
-                            this.setState({ [`hovered_${index}`]: false });
-                        }}
+                        onMouseOver={() => this.handeMouseOver(index)}
+                        onMouseOut={() => this.handeMouseOut(index)}
                         className={b()}
                     >
                         <header className={b('title')}>
