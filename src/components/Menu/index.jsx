@@ -9,30 +9,37 @@ import './index.css';
 const b = b_.with('menu');
 
 export default class Menu extends Component {
-    constructor() {
-        super();
-        this.state = {
-            menu: false
-        };
-    }
-    changeMenuVisibility = () => {
-        this.setState({ menu: !this.state.menu });
+    state = {
+        isMenuVisible: false
     };
+
+    changeMenuVisibility = () => {
+        this.setState(prevState => ({ isMenuVisible: !prevState.isMenuVisible }));
+    };
+
     render() {
-        const { hrefArray, size, sections, footer } = this.props;
-        const { menu } = this.state;
+        const { navLinks, size, sections, footer, logo } = this.props;
+        const { isMenuVisible } = this.state;
 
         return (
             <div className={b({ size })}>
                 <Hamburger handleClick={this.changeMenuVisibility} />
                 <Content
-                    menu={menu}
-                    hrefArray={hrefArray}
-                    size={size}
-                    sections={sections}
-                    footer={footer}
+                  menu={isMenuVisible}
+                  navLinks={navLinks}
+                  size={size}
+                  sections={sections}
+                  footer={footer}
+                  logo={logo}
                 />
             </div>
         );
     }
+}
+
+Menu.defaultProps = {
+    navLinks: [{name: null, href: null}],
+    size: "full",
+    sections: [{content: null, title: {name: null}}],
+    footer: {content: null}
 }

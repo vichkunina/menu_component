@@ -8,7 +8,7 @@ const component2 = (
     <div>
         <p>The Rolling Scopes is a front-end conference,
             located in Minsk, Belarus.</p>
-        <href>Read more</href>
+        <a>Read more</a>
     </div>
 )
 
@@ -26,26 +26,30 @@ const component4 = (
         <p>The Rolling Scopes Conference August 9-11, 2019
             Minsk, Belarus</p>
         <button>нажми</button>
-        <href>more</href>
+        <a>more</a>
     </div>
 )
 
 const component5 = (
     <div>
-        <href>1111</href>
-        <href>2222</href>
-        <href>3333</href>
-        <href>4444</href>
+        <a>1111</a>
+        <a>2222</a>
+        <a>3333</a>
+        <a>4444</a>
     </div>
 )
-
 
 const footerComponent = (
     <div>
        Follow us<br />on social media,<br />our hashtag #rollingscopes
     </div>
 )
-export const hrefs = [
+
+const logoComponent = (
+    <img src="" width='50' height='50' />
+)
+
+export const navLinks = [
     {
         href: 'home',
         title: 'home',
@@ -111,6 +115,10 @@ export const sections = [
 
 export const footer = {
   content: footerComponent,
+}
+
+export const logo = {
+    content: logoComponent,
 }
 
 export const size = 'full'

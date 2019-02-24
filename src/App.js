@@ -2,11 +2,14 @@ import React from 'react';
 
 import Menu from './components/Menu';
 
-import { size, hrefs, sections, footer } from "./stubs";
+import { size, navLinks, sections, footer, logo } from "./stubs";
 
 const App = () =>
-    <div>
-        <Menu size={size} hrefArray={hrefs} sections={sections} footer={footer} />
-    </div>
+    <Menu size={size}
+        navLinks={navLinks}
+        sections={sections}
+        footer={footer}
+        logo={logo}
+    />
 
 export default App;

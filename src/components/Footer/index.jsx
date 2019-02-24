@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import b_ from 'b_';
 
 import './index.css';
 
 const b = b_.with('footer');
 
-export default class Footer extends Component {
-    render() {
-        const { footer } = this.props;
+const Footer = props => <footer className={b()}>{props.footer.content}</footer>;
 
-        return <footer className={b()}>{footer.content}</footer>;
-    }
-}
+
+export default Footer;
