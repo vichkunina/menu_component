@@ -23,14 +23,17 @@ export default class Menu extends Component {
 
         return (
             <div className={b({ size })}>
-                <Hamburger handleClick={this.changeMenuVisibility} />
+                <Hamburger
+                    isMenuVisible={isMenuVisible}
+                    handleClick={this.changeMenuVisibility} />
                 <Content
-                  menu={isMenuVisible}
-                  navLinks={navLinks}
-                  size={size}
-                  sections={sections}
-                  footer={footer}
-                  logo={logo}
+                    changeMenuVisibility={this.changeMenuVisibility}
+                    menu={isMenuVisible}
+                    navLinks={navLinks}
+                    size={size}
+                    sections={sections}
+                    footer={footer}
+                    logo={logo}
                 />
             </div>
         );

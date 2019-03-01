@@ -1,21 +1,21 @@
 .hamburger {
     position: absolute;
+    z-index: 1;
     top: 20px;
     right: 20px;
     cursor: pointer;
-    z-index: 1;
 }
 
 .hamburger__line {
+    display: block;
     width: 25px;
     height: 2px;
-    background-color: white;
-    display: block;
     margin: 4px 0;
     transition: all 0.3s ease-in-out;
+    background-color: white;
 }
 
-  
+
 .hamburger_active .hamburger__line:nth-child(2) {
     opacity: 0;
 }

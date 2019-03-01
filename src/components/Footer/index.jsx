@@ -7,5 +7,4 @@ const b = b_.with('footer');
 
 const Footer = props => <footer className={b()}>{props.footer.content}</footer>;
 
-
 export default Footer;

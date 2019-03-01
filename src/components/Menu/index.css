@@ -1,6 +1,6 @@
 .menu {
-    transition: .3s ease-out;
-    color: white;
     display: flex;
     align-items: center;
+    transition: .3s ease-out;
+    color: white;
 }

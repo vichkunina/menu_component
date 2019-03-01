@@ -5,19 +5,12 @@ import './index.css';
 const b = b_.with('hamburger');
 
 export default class Hamburger extends Component {
-    constructor() {
-        super();
-        this.state = {
-            opened: false
-        };
-    }
-
     hanleIconClick = () => {
         this.props.handleClick();
-        this.setState({ opened: !this.state.opened });
     };
+
     render() {
-        const iconClass = this.state.opened ? b({ active: true }) : b();
+        const iconClass = this.props.isMenuVisible ? b({ active: true }) : b();
 
         return (
             <div onClick={this.hanleIconClick} className={iconClass}>

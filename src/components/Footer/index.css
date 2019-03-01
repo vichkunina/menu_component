@@ -1,15 +1,14 @@
 .footer {
+    display: flex;
+    position: relative;
     bottom: 0;
     left: 0;
-    text-align: left;
-    padding: 20px;
-    font-size: 14px;
-    background: #1f1f1f;
     box-sizing: border-box;
-    grid-area: footer;
-    position: relative;
-
-    display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding: 20px;
+    background: #1f1f1f;
+    font-size: 14px;
+    text-align: left;
+    grid-area: footer;
 }

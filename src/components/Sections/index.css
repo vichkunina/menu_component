@@ -1,24 +1,24 @@
 .section__title a,
 .section__title {
-    text-transform: uppercase;
+    padding: 1rem 0;
+    color: white;
     font-weight: bold;
     letter-spacing: 2px;
-    padding: 1rem 0;
     text-decoration: none;
-    color: white;
+    text-transform: uppercase;
 }
 
 .section {
     display: flex;
+    box-sizing: border-box;
+    box-sizing: content-box;
     flex-direction: column;
     max-width: 33%;
-    box-sizing: border-box;
-    text-align: left;
-    padding: 0 20px 20px;
-    transition: .4s cubic-bezier(.25,.25,.75,.75);
     /* border: 1px solid #ffffff1a; */
     margin: .25rem;
-    box-sizing: content-box;
+    padding: 0 20px 20px;
+    transition: .4s cubic-bezier(.25,.25,.75,.75);
+    text-align: left;
 }
 
 .section:hover {
@@ -28,17 +28,17 @@
 .sections {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
     height: 100vh;
-    grid-area: sections;
+    margin: auto;
     overflow-y: auto;
+    grid-area: sections;
 }
 
 @media(max-width: 767px) {
     .section {
-        max-width: 100%;
-        width: 100%;
         box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
         margin: .25rem .5rem;
     }
 
@@ -47,4 +47,10 @@
         height: 100%;
     }
 
+}
+
+@media(max-width: 480px) {
+    .sections {
+        background: #1f1f1f;
+    }
 }
