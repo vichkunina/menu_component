@@ -14,7 +14,6 @@
     box-sizing: content-box;
     flex-direction: column;
     max-width: 33%;
-    /* border: 1px solid #ffffff1a; */
     margin: .25rem;
     padding: 0 20px 20px;
     transition: .4s cubic-bezier(.25,.25,.75,.75);

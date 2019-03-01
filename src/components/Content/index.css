@@ -69,7 +69,7 @@
             'sections'
             'footer';
         grid-template-columns: 1fr;
-        transition: all .1s ease-out;
+        transition: all .2s linear;
     }
 
     .menu {

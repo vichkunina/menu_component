@@ -59,7 +59,7 @@ export default class Content extends Component {
             return
         }
 
-        if (width <= 480 && touchPosition > width * 0.3) {
+        if (width <= 480) {
             const offsetX = width * 0.85 - touchPosition;
 
             this.setState({transform: `translateX(-${offsetX}px)`});
