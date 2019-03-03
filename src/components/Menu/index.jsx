@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import b_ from 'b_';
 
-import Content from '../Content';
-import Hamburger from '../Icon';
+import Content from './Content';
+import Hamburger from './Icon';
 
 import './index.css';
 

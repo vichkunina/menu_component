@@ -15,8 +15,8 @@ export default class Navigation extends Component {
             <nav className={b({ size })}>
                 { logo ? Logo({logo}) : null}
                 <ul className={b('wrapper')}>
-                    {navLinks.map(hrefObj => (
-                        <li className={b('item')}>
+                    {navLinks.map((hrefObj, index) => (
+                        <li key={index} className={b('item')}>
                             <a className={b('item-href')} href={hrefObj.href}>
                                 {hrefObj.title}
                             </a>

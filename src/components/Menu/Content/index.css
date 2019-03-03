@@ -3,6 +3,7 @@
     width: 20%;
 
     height: 100%;
+    will-change: transform;
     transition: all .3s ease-out;
     background-color: #151515;
     grid-template-areas: 'nav sections sections sections'
@@ -69,7 +70,7 @@
             'sections'
             'footer';
         grid-template-columns: 1fr;
-        transition: all .05s linear;
+        /* transition: all .05s linear; */
     }
 
     .menu {

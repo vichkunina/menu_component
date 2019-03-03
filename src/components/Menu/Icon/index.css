@@ -1,9 +1,11 @@
 .hamburger {
     position: absolute;
     z-index: 1;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 15px;
     cursor: pointer;
+    padding: 5px;
+    user-select: none;
 }
 
 .hamburger__line {
