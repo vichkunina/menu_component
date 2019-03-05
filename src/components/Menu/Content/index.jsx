@@ -87,7 +87,8 @@ export default class Content extends Component {
 
     isNeededScroll = (newX, newY) => {
         const { x, y } = this.prevPageCoordinates;
-        const isVerticalScroll = x !== 0 && y !== 0 && Math.abs(newX - x) < Math.abs(newY - y) && !this.prevTranslateX;
+        const isVerticalScroll = x !== 0 && y !== 0
+            && Math.abs(newX - x) < Math.abs(newY - y) && !this.prevTranslateX;
 
         this.setNewPageCoordinates({ x: newX, y: newY });
 
@@ -100,9 +101,12 @@ export default class Content extends Component {
     handleTouchMove = e => {
         const { width, touchPositionX, touchPositionY } = this.getTouchDescription(e);
 
+
         if (this.disableTouchMove) {
             return;
         }
+
+        this.lastMoveDirection(touchPositionX);
 
         if (this.isNeededScroll(touchPositionX, touchPositionY)) {
             return;
@@ -127,7 +131,7 @@ export default class Content extends Component {
         this.setState({transform: `translateX(-${translateValue}px)`}, () => {
             this.setPrevOffsetX(offsetX);
             this.setPrevTranslateX(translateValue);
-            this.lastMoveDirection(touchPositionX)
+            
         });
     }
 
